@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Checkout | OFF THE TRAIL</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body class="no-sidebar is-preload">
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <section id="header">
+
+            <!-- Logo -->
+            <h1>
+                <a href="index.html"></a>
+            </h1>
+            <a href="index.html"><img src="images/logo.png" style="width:300px;"></a>
+            <!-- Nav -->
+            <nav id="nav">
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">Products</a>
+                        <ul>
+                            <li><a href="index.html">Oversized T-Shirts</a></li>
+                            <li><a href="#">Coming Soon</a></li>
+                            <li><a href="#">Coming Soon</a></li>
+                            <li><a href="#">Coming Soon</a></li>
+                            <li><a href="#">Coming Soon</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="current"><a href="checkoutproduct.html">Cart</a></li>
+            </nav>
+            <!-- Banner -->
+            <section id="banner">
+                <header>
+                    <h2>Payment</h2>
+                    <p></p>
+                </header>
+            </section>
+
+            <!-- Main -->
+            <section id="main">
+                <div class="container">
+                    <h1>Payment Below (only UPI)</h1>
+
+                    <!-- Content -->
+                    <article class="box post">
+                        <section id="main">
+                            <select id="menu">
+                                <option value="" >Please Choose The Product...</option>
+                                <option value="https://www.upilinks.in/payment-link/upi238570721">"Off the WALL" Dropshoulder Oversized T-Shirt</option>
+                                <option value="https://www.upilinks.in/payment-link/upi2120594086">"Human Being" Dropshoulder Oversized T-Shirt</option>
+                                <option value="https://www.upilinks.in/payment-link/upi794938543">"Y2K SKULL" Dropshoulder Oversized T-Shirt</option>
+
+                                </select>
+                            <button id="go" onclick="gotosite()">Generate QR Code</button>
+
+                </div>
+                </section>
+
+                <!-- Footer -->
+                <script>
+                    function gotosite() {
+                        window.location = document.getElementById("menu").value; // JQuery:  $("#menu").val();
+                    }
+                </script>
+                <header>
+                    <h1>Shipping Details</h1>
+
+                </header>
+
+
+                <form action="https://getform.io/f/arolkqzb" method="POST" enctype="multipart/form-data">
+                    <p><strong>SCREENSHOT OF PAYMENT</strong</p> <BR></BR><input type="file" name="file"><br><br><br><br>
+                    <p>Screenshot OF THE DRESS REQUIRED</p>
+                    <input type="file" name="file">
+                    <input type="text" name="full-name" placeholder="Your Name">
+                    <input type="text" name="full-name" placeholder="Your Shipping Address (Block/Flat, Street, City, State, ZIP Code)">
+
+                    <!-- add hidden Honeypot input to prevent spams -->
+                    <input type="hidden" name="_gotcha" style="display:none !important">
+                    <button type="submit">Send</button>
+                </form>
+                <p><strong>
+                        
+                        IF PAYING TO UPI ID (9000250885@fam), PLEASE ENSURE TO LEAVE A NOTE THROUGH WHATSAPP OR MESSAGES TO PH: +91 9000250885 REGARDING THE DRESS REQUIRED, THE SPECEFIC AMOUNT AND A SCREENSHOT OF THE PAYMENT
+                   
+                    </strong> </p>
+
+            </section>
+            </article>
+
+    </div>
+    </section>
+
+    <!-- Footer -->
+    <p>copyright HUESPLASH2024</p>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
